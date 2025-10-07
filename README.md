@@ -1,4 +1,4 @@
-# Gokaasa API
+# geeken API
 
 A robust NestJS-based REST API with authentication, authorization, and role-based access control.
 
@@ -24,7 +24,7 @@ A robust NestJS-based REST API with authentication, authorization, and role-base
 1. **Clone the repository**
    ```bash
    git clone <your-repository-url>
-   cd api.gokaasa.com
+   cd api.geeken.com
    ```
 
 2. **Install dependencies**
@@ -428,7 +428,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🆘 Support
 
-For support, email support@gokaasa.com or create an issue in the repository.
+For support, email support@geeken.com or create an issue in the repository.
 
 ## 🔗 Links
 

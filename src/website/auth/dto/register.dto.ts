@@ -2,7 +2,7 @@ import { IsEmail, IsNotEmpty, IsString, MinLength, IsOptional, IsPhoneNumber } f
 import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger';
 
 export class RegisterDto {
-  @ApiProperty({ example: 'info@gokaasa.com' })
+  @ApiProperty({ example: 'info@geeken.com' })
   @IsEmail()
   @IsNotEmpty()
   email: string;

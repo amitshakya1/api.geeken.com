@@ -1,7 +1,7 @@
 {
-  "name": "api.gokaasa.com",
+  "name": "api.geeken.com",
   "version": "1.0.0",
-  "description": "Gokaasa Backend with Authentication and CRUD APIs",
+  "description": "geeken Backend with Authentication and CRUD APIs",
   "author": "",
   "private": true,
   "license": "UNLICENSED",
@@ -21,8 +21,8 @@
     "typeorm": "typeorm-ts-node-commonjs",
     "migration:generate": "typeorm-ts-node-commonjs migration:generate -d src/database/data-source.ts",
     "migration:create": "typeorm-ts-node-commonjs migration:create -d src/database/data-source.ts",
-    "migration:run": "typeorm-ts-node-commonjs migration:run -d dist/database/data-source.js",
-    "migration:revert": "typeorm-ts-node-commonjs migration:revert -d dist/database/data-source.js",
+    "migration:run": "typeorm-ts-node-commonjs migration:run -d src/database/data-source.ts",
+    "migration:revert": "typeorm-ts-node-commonjs migration:revert -d src/database/data-source.ts",
     "db:seed": "ts-node -r tsconfig-paths/register src/seeder.ts",
     "db:reset": "npx typeorm-ts-node-commonjs schema:drop -d src/database/data-source.ts && npx typeorm-ts-node-commonjs migration:run -d src/database/data-source.ts"
   },

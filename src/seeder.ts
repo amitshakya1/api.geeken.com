@@ -20,7 +20,7 @@ async function bootstrap() {
     try {
         // 1. Create super admin user
         // we should not create super admin user if it already exists
-        const superAdminUser = await usersService.findByEmail('info@gokaasa.com');
+        const superAdminUser = await usersService.findByEmail('info@geeken.com');
         if (!superAdminUser) {
             throw new NotFoundException('User not found');
         }
@@ -268,7 +268,7 @@ async function bootstrap() {
         console.log('\n👤 Creating/updating users...');
         const users = [
             {
-                email: 'info@gokaasa.com',
+                email: 'info@geeken.com',
                 password: 'admin$123',
                 firstName: 'Ashutosh',
                 lastName: 'Bhardwaj',
@@ -292,7 +292,7 @@ async function bootstrap() {
                 status: 'active',
             },
             {
-                email: 'admin@gokaasa.com',
+                email: 'admin@geeken.com',
                 password: 'admin123',
                 firstName: 'Admin',
                 lastName: 'User',
@@ -300,7 +300,7 @@ async function bootstrap() {
                 status: 'active',
             },
             {
-                email: 'partner@gokaasa.com',
+                email: 'partner@geeken.com',
                 password: 'partner123',
                 firstName: 'Partner',
                 lastName: 'User',
@@ -308,14 +308,14 @@ async function bootstrap() {
                 status: 'active',
             },
             {
-                email: 'employee@gokaasa.com',
+                email: 'employee@geeken.com',
                 password: 'employee123',
                 firstName: 'Employee',
                 lastName: 'User',
                 roleName: 'employee',
             },
             {
-                email: 'guest@gokaasa.com',
+                email: 'guest@geeken.com',
                 password: 'guest123',
                 firstName: 'Guest',
                 lastName: 'User',
@@ -323,7 +323,7 @@ async function bootstrap() {
                 status: 'active',
             },
             {
-                email: 'user@gokaasa.com',
+                email: 'user@geeken.com',
                 password: 'user123',
                 firstName: 'User',
                 lastName: 'Website',

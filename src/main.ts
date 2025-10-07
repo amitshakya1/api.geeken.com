@@ -38,15 +38,15 @@ async function bootstrap() {
 
   // Base Swagger config
   const baseConfig = new DocumentBuilder()
-    .setTitle("Gokaasa API")
-    .setDescription("Complete API documentation for Gokaasa platform")
+    .setTitle("geeken API")
+    .setDescription("Complete API documentation for geeken platform")
     .setVersion("1.0")
     .addBearerAuth()
     .build();
 
   // Admin Swagger config
   const adminConfig = new DocumentBuilder()
-    .setTitle("Gokaasa Admin API")
+    .setTitle("geeken Admin API")
     .setDescription("Admin API for backend management operations")
     .setVersion("1.0")
     .addBearerAuth()
@@ -58,7 +58,7 @@ async function bootstrap() {
     deepScanRoutes: true,
   });
   SwaggerModule.setup("api/admin/docs", app, adminDoc, {
-    customSiteTitle: "Gokaasa Admin API Docs",
+    customSiteTitle: "geeken Admin API Docs",
     customfavIcon: "/assets/images/logo.png",
     customCss: `
     .topbar-wrapper .link:after { content: ''; }
@@ -73,7 +73,7 @@ async function bootstrap() {
 
   // Website Swagger config
   const websiteConfig = new DocumentBuilder()
-    .setTitle("Gokaasa Website API")
+    .setTitle("geeken Website API")
     .setDescription("Public API for website operations")
     .setVersion("1.0")
     .addBearerAuth()
@@ -85,7 +85,7 @@ async function bootstrap() {
     deepScanRoutes: true,
   });
   SwaggerModule.setup("api/website/docs", app, websiteDoc, {
-    customSiteTitle: "Gokaasa Website API Docs",
+    customSiteTitle: "geeken Website API Docs",
     customfavIcon: "/assets/images/logo.png",
     customCss: `
     .topbar-wrapper .link:after { content: ''; }

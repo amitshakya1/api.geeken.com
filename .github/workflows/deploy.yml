@@ -1,4 +1,4 @@
-name: api.gokaasa.com - Deploy to EC2
+name: api.geeken.com - Deploy to EC2
 
 on:
   push:
@@ -24,14 +24,14 @@ jobs:
             echo "🧠 Detecting branch..."
             if [ "${{ github.ref_name }}" = "main" ]; then
               ENV="production"
-              DIR="/var/www/api.gokaasa.com"
+              DIR="/var/www/api.geeken.com"
               PM2_ENV="production"
-              PM2_NAME="api.gokaasa.com"
+              PM2_NAME="api.geeken.com"
             elif [ "${{ github.ref_name }}" = "develop" ]; then
               ENV="staging"
-              DIR="/var/www/staging-api.gokaasa.com"
+              DIR="/var/www/staging-api.geeken.com"
               PM2_ENV="staging"
-              PM2_NAME="staging-api.gokaasa.com"
+              PM2_NAME="staging-api.geeken.com"
             else
               echo "❌ Unsupported branch: ${{ github.ref_name }}"
               exit 1

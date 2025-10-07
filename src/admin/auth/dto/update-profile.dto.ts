@@ -19,7 +19,7 @@ export class UpdateProfileDto {
   @IsString()
   lastName?: string;
 
-  @ApiPropertyOptional({ example: "info@gokaasa.com" })
+  @ApiPropertyOptional({ example: "info@geeken.com" })
   @IsOptional()
   @IsEmail()
   email?: string;

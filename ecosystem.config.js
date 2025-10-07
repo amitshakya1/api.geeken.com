@@ -1,7 +1,7 @@
 module.exports = {
   apps: [
     {
-      name: 'api.gokaasa.com', // Production PM2 service name
+      name: 'api.geeken.com', // Production PM2 service name
       script: 'dist/main.js',
       instances: 'max',
       exec_mode: 'cluster',
@@ -26,7 +26,7 @@ module.exports = {
       node_args: '--max-old-space-size=1024'
     },
     {
-      name: 'staging-api.gokaasa.com', // Staging PM2 service name
+      name: 'staging-api.geeken.com', // Staging PM2 service name
       script: 'dist/main.js',
       instances: 'max',
       exec_mode: 'cluster',
@@ -55,19 +55,19 @@ module.exports = {
   // deploy: {
   //   production: {
   //     user: 'deploy',
-  //     host: 'api.gokaasa.com',
+  //     host: 'api.geeken.com',
   //     ref: 'origin/main',
-  //     repo: 'git@github.com:amitshakya1/api.gokaasa.com.git',
-  //     path: '/var/www/api.gokaasa.com',
-  //     'post-deploy': 'npm install && npm run build && npm run migration:run && pm2 reload ecosystem.config.js --only api.gokaasa.com --env production',
+  //     repo: 'git@github.com:amitshakya1/api.geeken.com.git',
+  //     path: '/var/www/api.geeken.com',
+  //     'post-deploy': 'npm install && npm run build && npm run migration:run && pm2 reload ecosystem.config.js --only api.geeken.com --env production',
   //   },
   //   staging: {
   //     user: 'deploy',
-  //     host: 'staging-api.gokaasa.com',
+  //     host: 'staging-api.geeken.com',
   //     ref: 'origin/develop',
-  //     repo: 'git@github.com:amitshakya1/api.gokaasa.com.git',
-  //     path: '/var/www/staging-api.gokaasa.com',
-  //     'post-deploy': 'npm install && npm run build && npm run migration:run && pm2 reload ecosystem.config.js --only staging-api.gokaasa.com --env staging',
+  //     repo: 'git@github.com:amitshakya1/api.geeken.com.git',
+  //     path: '/var/www/staging-api.geeken.com',
+  //     'post-deploy': 'npm install && npm run build && npm run migration:run && pm2 reload ecosystem.config.js --only staging-api.geeken.com --env staging',
   //   }
   // }
 };
