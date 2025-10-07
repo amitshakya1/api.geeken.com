@@ -1,0 +1,70 @@
+name: api.gokaasa.com - Deploy to EC2
+
+on:
+  push:
+    branches:
+      - main
+      - develop
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🚚 Checkout repository
+        uses: actions/checkout@v4
+
+      - name: 🚀 Connect to EC2 and deploy
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ${{ secrets.EC2_USER }}
+          key: ${{ secrets.EC2_SSH_KEY }}
+          script: |
+            echo "🧠 Detecting branch..."
+            if [ "${{ github.ref_name }}" = "main" ]; then
+              ENV="production"
+              DIR="/var/www/api.gokaasa.com"
+              PM2_ENV="production"
+              PM2_NAME="api.gokaasa.com"
+            elif [ "${{ github.ref_name }}" = "develop" ]; then
+              ENV="staging"
+              DIR="/var/www/staging-api.gokaasa.com"
+              PM2_ENV="staging"
+              PM2_NAME="staging-api.gokaasa.com"
+            else
+              echo "❌ Unsupported branch: ${{ github.ref_name }}"
+              exit 1
+            fi
+
+            echo "🚀 Deploying to $ENV environment..."
+
+            cd "$DIR" || exit 1
+
+            echo "🔄 Resetting local changes..."
+            git reset --hard
+            git clean -fd
+
+            echo "📥 Pulling latest code from branch ${{ github.ref_name }}..."
+            git pull origin ${{ github.ref_name }} || exit 1
+
+            echo "📦 Installing dependencies..."
+            npm install || exit 1
+
+            echo "🏗️ Building project..."
+            npm run build || exit 1
+
+            echo "🔄 Running migrations..."
+            npm run migration:run || exit 1
+
+            echo "🔁 Restarting application with PM2..."
+            if pm2 list | grep -q "$PM2_NAME"; then
+              pm2 reload ecosystem.config.js --only "$PM2_NAME" --env "$PM2_ENV"
+            else
+              pm2 start ecosystem.config.js --only "$PM2_NAME" --env "$PM2_ENV"
+            fi
+
+            echo "💾 Saving PM2 process list..."
+            pm2 save
+
+            echo "✅ $ENV deployment completed successfully!"

@@ -1,0 +1,64 @@
+{
+  "email": "john@examsadsfdsfple.com",
+  "password": "password123",
+  "firstName": "John",
+  "lastName": "Doe",
+  "phone": "+918743874378",
+  "fileIds": ["01cf863c-6b84-433a-ab88-9b9c0270b141"],
+  "roles": ["admin", "partner"],
+  "permissions": ["create_user", "read_user", "update_user", "delete_user"],
+  "status": "active",
+  "companies": [
+    {
+      "name": "Acme Corp",
+      "email": "info@acme.com",
+      "phone": "+1234567890",
+      "address": "123 Main St",
+      "city": "New York",
+      "state": "NY",
+      "pincode": "10001",
+      "country": "USA",
+      "gstName": "Acme GST",
+      "gstNumber": "22AAAAA0000A1Z5",
+      "addresses": [
+        {
+          "type": "registered_office",
+          "address": "123 Main St",
+          "city": "New York",
+          "state": "NY",
+          "pincode": "10001",
+          "country": "USA"
+        }
+      ],
+      "bankAccounts": [
+        {
+          "bankName": "Bank of America",
+          "accountNumber": "1234567890",
+          "accountHolderName": "John Doe",
+          "ifscCode": "BOFA0001234",
+          "upiName": "john.doe@upi",
+          "upiAddress": "john.doe@okbank"
+        }
+      ],
+      "documents": [
+        {
+          "type": "aadhaar",
+          "idNumber": "1234-5678-9012",
+          "frontFileId": "file-uuid-front",
+          "backFileId": "file-uuid-back"
+        }
+      ]
+    }
+  ],
+  "documents": [
+    {
+      "type": "aadhaar",
+      "idNumber": "1234-5678-9012",
+      "frontFileId": "01cf863c-6b84-433a-ab88-9b9c0270b141",
+      "backFileId": "01cf863c-6b84-433a-ab88-9b9c0270b141"
+    }
+  ],
+  "isActive": true,
+  "isEmailVerified": true,
+  "isPhoneVerified": true
+}

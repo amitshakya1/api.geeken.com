@@ -1,0 +1,16 @@
+# Generate private key
+openssl genrsa -out private.key 2048
+
+# Generate public key from private key
+openssl rsa -in private.key -pubout -out public.key
+
+npm run db:reset
+npm run migration:generate -- src/database/migrations/InitialMigration
+npm run migration:run
+npm run db:seed
+
+
+npm install @nestjs/websockets@10.0.0 @nestjs/platform-socket.io@10.0.0 socket.io
+
+
+npx tsc --noEmit app/partners/[id]/edit/page.tsx

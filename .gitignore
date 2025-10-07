@@ -1,0 +1,9 @@
+/.bolt/
+node_modules
+/dist/
+/doc/
+/logs/*
+/uploads/*
+/keys/*
+.env
+setup.txt

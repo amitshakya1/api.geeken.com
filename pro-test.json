@@ -1,0 +1,66 @@
+{
+  "email": "hyra@sdafda.com",
+  "password": "password123",
+  "firstName": "John",
+  "lastName": "Doe",
+  "phone": "+919226081538",
+  "fileIds": ["83d02673-0bb7-460e-92e5-9595a093b41c"],
+  "roles": ["admin", "partner"],
+  "permissions": ["create_user", "read_user", "update_user", "delete_user"],
+  "status": "active",
+  "companies": [
+    {
+      "id": "c95e9ee6-d64c-4c07-91dd-a6f8b796411f",
+      "name": "Acme Corp",
+      "email": "info@acme.com",
+      "phone": "+1234567890",
+      "address": "123 Main St",
+      "city": "New York",
+      "state": "NY",
+      "pincode": "10001",
+      "country": "USA",
+      "gstName": "Acme GST",
+      "gstNumber": "22AAAAA0000A1Z5",
+      "addresses": [
+        {
+          "id": "40008b74-9a81-47a2-b272-92b21ebceeba",
+          "type": "registered_office",
+          "address": "123 Main St",
+          "city": "New York",
+          "state": "NY",
+          "pincode": "10001",
+          "country": "USA"
+        }
+      ],
+      "bankAccounts": [
+        {
+          "id": "ac8380a9-4c4c-43b6-9159-a0c602c0b2aa",
+          "bankName": "Bank of America",
+          "accountNumber": "1234567890",
+          "accountHolderName": "John Doe",
+          "ifscCode": "BOFA0001234",
+          "upiName": "john.doe@upi",
+          "upiAddress": "john.doe@okbank"
+        }
+      ],
+      "documents": [
+        {
+          "id": "2903b62f-48c6-4fa3-9450-bdc9bfdab406",
+          "type": "registration_certificate",
+          "idNumber": "1234-5678-9012",
+          "frontFileId": "83d02673-0bb7-460e-92e5-9595a093b41c",
+          "backFileId": "83d02673-0bb7-460e-92e5-9595a093b41c"
+        }
+      ]
+    }
+  ],
+  "documents": [
+    {
+      "id": "8131f865-3aa6-4a71-a5cc-9b6e85f909fa",
+      "type": "aadhaar",
+      "idNumber": "1234-5678-9012",
+      "frontFileId": "83d02673-0bb7-460e-92e5-9595a093b41c",
+      "backFileId": "83d02673-0bb7-460e-92e5-9595a093b41c"
+    }
+  ]
+}

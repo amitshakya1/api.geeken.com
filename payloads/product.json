@@ -1,0 +1,190 @@
+{
+  "name": "iPhone 15",
+  "description": "Latest iPhone model with advanced features",
+  "slug": "string",
+  "tagLine": "string",
+  "address": {
+    "address": "string",
+    "city": "string",
+    "state": "string",
+    "country": "string",
+    "pincode": "string"
+  },
+  "contact": {
+    "phone": "string",
+    "email": "string",
+    "website": "string"
+  },
+  "bookingContact": {
+    "name": "string",
+    "email": "string",
+    "phone": "string",
+    "designation": "string"
+  },
+  "policies": {
+    "check_in": "",
+    "check_out": "",
+    "cancellation": ""
+  },
+  "website": "string",
+  "rating": 4.5,
+  "latitude": 15.2993,
+  "longitude": 74.124,
+  "collectionIds": [],
+  "amenityIds": [],
+  "partnerId": "8c3e39e5-72a5-432c-bbcd-03ff288b1114",
+  "typeId": "",
+  "fileIds": ["1d056e40-fe16-4e33-95e8-ce23237b9400"],
+  "variants": [
+    {
+      "name": "iPhone 15 Pro - 128GB - Natural Titanium",
+      "price": 999.99,
+      "compareAtPrice": 1199.99,
+      "currency": "INR",
+      "totalRooms": 50,
+      "capacity": 50,
+      "dimensions": {
+        "length_m": 6.5,
+        "width_m": 4,
+        "area_sq_m": 26
+      },
+      "extraBed": {
+        "available": true,
+        "pricePerNight": 1500
+      },
+      "foodOptions": [
+        {
+          "plan": "Breakfast Included",
+          "additionalPrice": 500
+        },
+        {
+          "plan": "Half Board",
+          "additionalPrice": 1200
+        }
+      ],
+      "fileIds": ["1d056e40-fe16-4e33-95e8-ce23237b9400"],
+      "amenityIds": [],
+      "status": "active"
+    }
+  ],
+  "seoTitle": "string",
+  "seoKeywords": "string",
+  "seoDescription": "string",
+  "status": "active"
+}
+
+==============================================
+{
+  "status": "success",
+  "message": "Operation successful",
+  "data": {
+    "id": "7d9a4d95-9816-45c3-bb34-7ffbeee8bf99",
+    "name": "iPhone 15",
+    "slug": "iphone-15",
+    "tagLine": "string",
+    "description": "Latest iPhone model with advanced features",
+    "address": {
+      "city": "string",
+      "state": "string",
+      "address": "string",
+      "country": "string",
+      "pincode": "string"
+    },
+    "contact": {
+      "email": "string",
+      "phone": "string",
+      "website": "string"
+    },
+    "bookingContact": {
+      "name": "string",
+      "email": "string",
+      "phone": "string",
+      "designation": "string"
+    },
+    "policies": {
+      "check_in": "",
+      "check_out": "",
+      "cancellation": ""
+    },
+    "latitude": "15.299300",
+    "longitude": "74.124000",
+    "website": "string",
+    "rating": "4.50",
+    "type": null,
+    "collections": [],
+    "amenities": [],
+    "files": [
+      {
+        "id": "1d056e40-fe16-4e33-95e8-ce23237b9400",
+        "name": "string",
+        "altText": "string",
+        "fileName": "d3644f55-c1b6-40ae-8c18-72e9f8a6d5af.jpg",
+        "originalUrl": "http://localhost:5002/uploads/1d056e40-fe16-4e33-95e8-ce23237b9400/d3644f55-c1b6-40ae-8c18-72e9f8a6d5af.jpg",
+        "mimeType": "image/jpeg",
+        "disk": "local",
+        "conversionsDisk": "local",
+        "size": 20815,
+        "generatedConversions": {
+          "icon": "http://localhost:5002/uploads/1d056e40-fe16-4e33-95e8-ce23237b9400/d3644f55-c1b6-40ae-8c18-72e9f8a6d5af_icon.webp",
+          "thumb": "http://localhost:5002/uploads/1d056e40-fe16-4e33-95e8-ce23237b9400/d3644f55-c1b6-40ae-8c18-72e9f8a6d5af_thumb.webp"
+        },
+        "status": "active",
+        "createdAt": "2025-09-05T12:02:58.434Z",
+        "updatedAt": "2025-09-05T12:02:58.511Z"
+      }
+    ],
+    "variants": [
+      {
+        "id": "d059c619-53b3-45ca-b139-fc3bc26b2686",
+        "productId": "7d9a4d95-9816-45c3-bb34-7ffbeee8bf99",
+        "name": "iPhone 15 Pro - 128GB - Natural Titanium",
+        "price": 999.99,
+        "compareAtPrice": 1199.99,
+        "currency": "INR",
+        "capacity": 50,
+        "totalRooms": 50,
+        "dimensions": {
+          "width_m": 4,
+          "length_m": 6.5,
+          "area_sq_m": 26
+        },
+        "extraBed": {
+          "available": true,
+          "pricePerNight": 1500
+        },
+        "foodOptions": [
+          {
+            "plan": "Breakfast Included",
+            "additionalPrice": 500
+          },
+          {
+            "plan": "Half Board",
+            "additionalPrice": 1200
+          }
+        ],
+        "amenities": [],
+        "files": [],
+        "status": "active",
+        "createdAt": "2025-09-05T12:14:23.333Z",
+        "updatedAt": "2025-09-05T12:14:23.333Z"
+      }
+    ],
+    "partner": {
+      "id": "8c3e39e5-72a5-432c-bbcd-03ff288b1114",
+      "firstName": "Amit",
+      "lastName": "Shakya"
+    },
+    "user": {
+      "id": "2ad7fac9-c647-4743-95d9-a6e2384111dc",
+      "firstName": "Ashutosh",
+      "lastName": "Bhardwaj"
+    },
+    "seoTitle": "string",
+    "seoKeywords": "string",
+    "seoDescription": "string",
+    "status": "active",
+    "createdAt": "2025-09-05T12:14:23.333Z",
+    "updatedAt": "2025-09-05T12:14:23.333Z",
+    "deletedAt": null
+  }
+}
